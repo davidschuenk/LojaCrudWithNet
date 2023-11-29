@@ -1,0 +1,33 @@
+﻿@page "/Produtos/{slug}/{id}"
+@model LojaWebApp.Pages.DetailsModel
+
+
+
+
+<h2 class="my-3">@Model.produto.Nome</h2>
+
+<div class="row">
+    
+    <div class="col-4">
+        <img class="img-fluid rounded" src="@Model.produto.ImagemUri">
+    </div>
+
+    <div class="col-6">
+        <h4 class="my-3">Sobre:</h4>
+        <p>@Model.produto.Descricao</p>
+        <h4 class="my-3">Mais Info:</h4>
+        <ul>
+            <li><label asp-for="produto.Preco"></label>: @Html.DisplayFor(model => model.produto.Preco)</li>
+            <li><label asp-for="produto.EntregaExpressa"></label>: @Model.produto.EntregaExpressaFormatada</li>
+            <li><label asp-for="produto.DataCadastro"></label>: @Html.DisplayFor(model => model.produto.DataCadastro)</li>
+            @if (Model.Marca is not null)
+            {
+                <li><label asp-for="produto.MarcaId"></label>: @Html.DisplayFor(model => model.Marca.Descricao)</li>
+            }
+        </ul>
+        <a class="btn my-3 btn-primary"
+           asp-page="Edit" asp-route-id="@Model.produto.ProdutoId">Editar</a>
+    </div>
+
+</div>
+

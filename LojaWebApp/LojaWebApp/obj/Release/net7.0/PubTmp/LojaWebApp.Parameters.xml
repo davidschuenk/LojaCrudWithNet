@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="infnet-aluno2023-01" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\faculdade\\2_semestre\\2_Bloco\\Desenvolvimento_Web_com_NET\ e\ Bases_de_Dados_23E44\\tp3\\part3\\LojaWebApp\\LojaWebApp\\obj\\Release\\net7\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

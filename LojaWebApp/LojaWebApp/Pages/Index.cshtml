@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+
+<div class="row justify-content-md-center">
+
+    @if (TempData["TempMensagemSucesso"] != null)
+    {
+        <div class="alert alert-success mt-5"
+             role="alert" style="width: 80%">
+            <h4 class="alert-heading">Sucesso!</h4>
+            Operação realizada com sucesso!
+        </div>
+    }
+
+
+    @foreach (var item in Model.ListaProduto)
+    {
+        <div class="card col-3 m-3">
+            <img src="@item.ImagemUri" class="p-3" style="border-radius: 25px">
+            <div class="card-body">
+                <h5 class="card-title">@item.Nome</h5>
+                <p class="card-text">@item.Descricao</p>
+                <a class="btn btn-primary" 
+                asp-page="/Details"
+                asp-route-id="@item.ProdutoId"
+                asp-route-slug="@item.NomeSlug">Ver mais</a>
+            </div>
+        </div>
+    }
+</div>
