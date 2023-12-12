@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ActiveDebugProfile>https</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>D:\faculdade\2_semestre\2_Bloco\Desenvolvimento_Web_com_NET e Bases_de_Dados_23E44\tp3\part3\LojaWebApp\LojaWebApp\Properties\PublishProfiles\infnet-aluno2023-01 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
-  </PropertyGroup>
-</Project>
